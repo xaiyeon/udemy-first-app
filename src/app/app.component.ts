@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+// Basically a class like OOP
 export class AppComponent {
-  title = 'app';
+  title = 'Udemy Tutorial App';
+  name = '';
 }
