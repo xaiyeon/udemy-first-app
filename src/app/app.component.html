@@ -16,6 +16,20 @@
       <hr>
       <app-alerts></app-alerts>
 
+      <hr>
+      <!-- Assignment 3 -->
+      <button class="btn btn-primary" (click)="onToggleDisplay()">
+        Display Details
+      </button>
+
+      <p *ngIf="showSecret">Secret Password is Sushi</p>
+      <div *ngFor="let logItem of click_log; let d = index"
+        [ngStyle]="{backgroundColor: d >= 5 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': d >= 5}"
+      >{{ logItem }}</div>
+
+      <hr>
+
     </div>
   </div>
 </div>

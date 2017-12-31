@@ -10,4 +10,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Udemy Tutorial App';
   name = '';
+
+  // Variables for assignment 3
+  click_log = [];
+  showSecret = false;
+
+  onToggleDisplay() {
+    this.showSecret = !this.showSecret;
+    // Increase the element in the array
+    // this.click_log.push(this.click_log.length + 1);
+    this.click_log.push(new Date());
+  }
+
 }
